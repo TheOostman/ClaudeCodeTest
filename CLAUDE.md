@@ -20,6 +20,18 @@ Everything lives in `tictactoe.html` in three co-located sections:
 - **CSS** — dark theme (`#1a1a2e` background), grid layout, win-pulse animation
 - **JavaScript** — vanilla JS, no frameworks. Key state: `board` (9-element array), `current` (active player), `gameOver`, `scores`. Win detection iterates `WINS` (8 hardcoded triplets). All DOM updates go through `setStatus()` and direct class manipulation on `.cell` elements.
 
+## Model usage policy
+
+Default model is **Haiku** (fast, cheap) — good for most tasks. Escalate when the task warrants it:
+
+| Model | When to use |
+|-------|-------------|
+| `haiku` (default) | Routine edits, searches, quick questions, simple fixes |
+| `sonnet` | Multi-file refactors, moderate architecture decisions, code review |
+| `opus` | Complex bugs, security analysis, intricate design, heavy reasoning |
+
+Switch mid-session with `/model sonnet` or `/model opus`, then `/model haiku` to drop back down.
+
 ## Git workflow
 
 - Remote: `https://github.com/TheOostman/ClaudeCodeTest`
