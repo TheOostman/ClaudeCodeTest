@@ -9,5 +9,21 @@ Thumbs.db
 # Logs
 *.log
 
-# Node (if added later)
+# Node
 node_modules/
+dist/
+dist-electron/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Secrets
+.env
+
+# App data
+backend/data/
+*.db
